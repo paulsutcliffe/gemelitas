@@ -1,0 +1,29 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: chimpance99
+  socket: /tmp/mysql.sock
+
+development:
+  database: gemelitas_development
+  <<: *defaults
+
+test: &test
+  database: gemelitas_test
+  <<: *defaults
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  host:
+  database: gemelitas_production
+  pool: 5
+  username:
+  password:
+
+cucumber:
+  <<: *test
