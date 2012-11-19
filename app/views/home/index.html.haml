@@ -1,2 +1,14 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+- page_title! 'Gemelitas Sutclife Pastor'
+
+
+
+.wrapper
+  %h2= @dias_para_el_babyshower
+  %h2 el babyshower de las gemelitas.
+
+  = render 'scripts/royal_slider'
+  = render 'scripts/royal_slider_init'
+
+  = render 'slides/lista'
+
+

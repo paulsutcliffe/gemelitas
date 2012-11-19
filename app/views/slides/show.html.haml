@@ -1,0 +1,8 @@
+%p#notice= notice
+
+= image_tag @slide.slide(:slide)
+
+
+= link_to 'Edit', edit_slide_path(@slide)
+\|
+= link_to 'Back', slides_path

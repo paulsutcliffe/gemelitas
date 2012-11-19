@@ -1,0 +1,108 @@
+
+
+
+#portafolio-listado {
+
+  h2.title {
+    background: none;
+    font-size: $size-heading;
+    line-height: 120%;
+    &:after {
+      background: none;
+    }
+  }
+  li {
+    margin: 0 $space * 2 $space * 2 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    .content {
+      background: $color-secondary-dark;
+      width: 100%; height: 100%; color: white;
+      padding: $space*4 $space*3 $space*4 $space*4 ; 
+      @include box-sizing;
+      @include absolute(left, top, 0, 100%);
+      @include transition; 
+      p {
+        color: white;
+      }
+      a.lightbox {
+        width: 100%; height: 100%; 
+        display: block;
+        @include absolute(left, top, 0, 0);
+        &:after {
+          @include sprite(24px, 24px, 0px, -50px);
+          @include absolute(right, bottom, 10px, 10px);
+        }
+      }
+    }
+    &:hover .content {
+      @include absolute(left, top, 0, 0);
+    }
+
+
+
+    img {
+      @include vtop;
+    }
+    
+    &.picture {
+      a.lightbox {
+        width: 100%; height: 100%; 
+        display: block;
+        @include absolute(left, top, 0, 0);
+        &:after {
+          @include sprite(24px, 24px, 0px, -50px);
+          @include absolute(right, bottom, 10px, 10px);
+        }
+      }
+    }
+    &.video {
+      a.lightbox {
+        width: 100%; height: 100%; 
+        display: block;
+        @include absolute(left, top, 0, 0);
+        &:after {
+          @include sprite(24px, 24px, -30px, -50px);
+          @include absolute(right, bottom, 10px, 10px);
+        }
+      }
+    }
+  }
+}
+
+.website{
+  z-index:110; position: relative;
+  a {color:white /*background: $bg-external-link*/; padding-right: $space*3;
+    &:hover {text-decoration: underline;}
+  }
+}
+
+.social-links {
+  footer & {
+    @include tleft;
+    .label, ul{
+      @include inline-block-(left);
+    }
+    .label {
+      position: relative; top:-$space;
+      margin-right: $space*2;
+      color: white;
+    }
+    ul {
+      margin-top: $space*2;
+      li {
+        @include inline-block-(left);
+        margin: 0;
+        a {
+         
+          background-color: green;
+          &.facebook { @include sprite(29px, 29px, -57px, -48px);}
+          &.youtube { @include sprite(29px, 29px, -87px, -48px);}
+        }
+      }
+    }
+  }
+}
+
+

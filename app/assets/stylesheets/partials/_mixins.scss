@@ -1,0 +1,213 @@
+
+/* HEADINGS
+---------------------------------------------------- */
+@mixin bg-border {
+  background: $bg-border;
+}
+@mixin bg-border-alt {
+  background: $bg-border-alt;
+}
+
+
+
+
+/* LAYOUT	
+---------------------------------------------------- */
+@mixin box-sizing {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
+}
+
+@mixin full-width {
+  width: 100%; float: left; clear: left;
+}
+
+
+@mixin absolute($side-horizontal, $side-vertical, $coord-x, $coord-y) {
+  position: absolute;
+  #{$side-vertical}: $coord-y;
+  #{$side-horizontal}: $coord-x;
+}
+@mixin relative($side-vertical, $side-horizontal, $coord-y, $coord-x) {
+  position: relative;
+  #{$side-vertical}: $coord-y;
+  #{$side-horizontal}: $coord-x;
+}
+
+@mixin align-right {
+  text-align:right;
+}
+
+@mixin sidebar($orient) {
+  float: $orient;
+}
+
+@mixin sidebarshadowbug($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+
+@mixin block-small {
+  padding-bottom: $space-bottom;
+  margin-bottom: $space-bottom;
+  @include bg-border-alt;
+}
+
+
+/* Texts 
+======================================================= */
+@mixin paragraph {
+  font-size: $size-paragraph;
+  line-height: $size-line;
+  color: $color;
+  margin-bottom: $space*2;
+}
+
+
+
+/* Box model 
+======================================================= */
+@mixin inline-block-parent($alignment) {
+}
+
+@mixin inline-block-($direction) {
+  display:inline-block;
+  *display:inline; *zoom:1;
+  text-align:$direction;
+}
+
+@mixin clearfix2 {
+  div:after, section:after {
+    content: "."; display: block; line-height: 0; clear: both; visibility: hidden; height: 0; 
+  }
+  div:after, section:after {
+    *zoom: 1;
+  }
+}
+
+@mixin box-sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Padding combinations 
+======================================================= */
+@mixin padding-x($multiply, $top, $right, $bottom, $left) {
+  padding:5px * $multiply - $top 10px *$multiply -$right 5px * $multiply - $bottom 10px *$multiply -$left;
+}
+@mixin padding-y($multiply, $top, $right, $bottom, $left) {
+  padding:10px * $multiply - $top 5px *$multiply -$right 10px * $multiply - $bottom 5px *$multiply -$left;
+}
+
+/* Margin 
+======================================================= */
+
+
+/* Floats & Alignments 
+======================================================= */
+
+@mixin fright {
+  float: right;
+}
+
+@mixin fleft {
+  float: left;
+}
+
+@mixin fnone {
+  float: none;
+}
+
+@mixin tright {
+  text-align: right;
+}
+
+@mixin tleft {
+  text-align: left;
+}
+
+@mixin tcenter {
+  text-align: center;
+}
+
+@mixin vtop {
+  vertical-align: top;
+}
+
+
+/* css Triangles 
+======================================================= */
+@mixin triangle {
+  border-color:transparent transparent $primary-color;
+  border-style:solid;
+  border-width:30px;
+  width:0; height:0;
+  content: "";
+}
+
+@mixin bullets {
+  width: 10px;
+  height: 10px;
+  background: $primary-color;
+  @include inline-block(left);
+  @include border-radius(20px);
+
+}
+
+/* Buttons
+======================================================= */
+@mixin button-style {
+
+}
+
+@mixin button($float) {
+  float: $float;
+  @include button-style;
+}
+@mixin submit($float) {
+  float: $float;
+  color: $color-secondary;
+  border: 0;
+  @include padding-x(1, 0, 0, 0, 0);
+  padding-right: $space * 4;
+  width: auto;
+  cursor: pointer;
+  background: $bg-arrow;
+  text-transform: uppercase;
+  font-size: $size-paragraph;
+}
+
+
+/* Fancy
+======================================================= */
+@mixin sombreado {
+  @include box-shadow($color-shadow 1px 1px 5px, $color-shadow -1px -1px 5px);
+}
+
+@mixin stroke {
+  border:1px solid $color-secondary;
+}
+
+@mixin transition {
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+/* Sprites
+======================================================= */
+@mixin sprite($width, $height, $x, $y) {
+  background: $sprite;
+  background-position: $x $y;
+  width: $width; height: $height;
+  content:"";
+  @include inline-block-(left);
+}
+
+
+
+

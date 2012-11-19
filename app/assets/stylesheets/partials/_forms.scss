@@ -1,0 +1,75 @@
+$form-field              : 100%;
+$form-field-margin       : $space * 5;
+$label-width             : $space * 30;
+$label-font-size         : $size-paragraph;
+$input-width             : 220px;
+$textarea-width          : 260px;
+$input-border-width      : 1px;
+$input-border-color      : $color-secondary;
+$textarea-min-height     : 100px;
+$bg-form-elements        : $bg-input;
+
+
+form {
+  #sidebar-first & {
+    @include span(6);
+  }
+}
+
+select {
+  #sidebar-first & {
+    width: 100%;
+    margin-bottom: $space;
+  }
+}
+
+.field {
+  margin-bottom: $form-field-margin;
+  .description {
+    font-size: $font-size-small;
+    margin: $space 0 0 $label-width;
+  }
+}
+
+label {
+  width: $label-width;
+  color: $color;
+  font-size: $label-font-size;
+  float: left;
+  text-transform: uppercase;
+  margin-bottom: $space * 1;
+}
+
+.field input, .field textarea{
+  border: $input-border-width solid $input-border-color;
+  background: $bg-form-elements;
+  font-family: $font-primary;
+  font-size: $size-paragraph;
+}
+.field.textarea {
+  margin-bottom: 5px;
+}
+
+.field input{
+  width: $input-width;
+  padding: $space *2 $space;
+}
+
+.field textarea {
+  width: $textarea-width;
+  padding: $space *2 0 0 $space;
+  resize: vertical;
+  min-height: $textarea-min-height;
+  height: $textarea-min-height;
+}
+
+.required {
+  font-size: $font-size-small;
+  padding-bottom: $space-paragraph;
+  margin-bottom: $space-paragraph * 2;
+  background-position: 0 100%;
+}
+
+.actions input{
+  @include submit(right);
+}

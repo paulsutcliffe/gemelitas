@@ -1,0 +1,140 @@
+
+@mixin block {
+  margin: 0 0 $space-block 0;
+}
+@mixin sidebar-block {
+  margin: 0 0 $space-top 0;
+}
+
+// BLOCKS
+#content {
+
+  // 3 columns format
+  .column {
+    float: left;
+    @include span(6);
+    @include append(1);
+    margin-right: $space * 2;
+    &.last, 
+    &.third {
+      @include append(0);
+      margin-right: 0;
+    }
+
+  }
+  
+  // section 1
+  #laposta {
+    article {
+      // @include block-small;      
+      // por el slider, doy relative, space-bottom y pongo el include block-small en el inner
+      margin-bottom: $space-bottom;
+      position: relative; 
+      .inner {
+        width: 100%;
+        @include block-small;
+      }
+      
+    }
+    img {
+      @include stroke;
+    }
+    #staff {
+      img {
+        float: left;
+        margin: 0 $space $space 0;
+      }
+      .datos {
+        overflow: hidden;
+        .nombre {
+          text-transform: uppercase;
+        }
+        .nombre, .cargo {
+          margin-bottom: $space;
+        }
+        .email, .phone {
+          @include full-width;
+        }
+        .email:before {
+          @include sprite(17px, 13px, -27px, -30px);
+          margin-right: $space;
+        }
+        .phone:before {
+          @include sprite(17px, 13px, -47px, -30px);
+          margin-right: $space;
+        }
+      }
+      ul {
+        li {
+          @include block-small;
+          @include full-width;
+        }
+      }
+    }
+  }
+ 
+  // section 2
+  #servicios-listado li {
+    margin-bottom: $space*6;
+  }
+
+ 
+  // section 3
+  #postafolio {
+    #portafolio-botones {
+      li {
+        @include inline-block-(right);
+        padding: 0 $main-menu-li-padding;
+        text-transform: uppercase;
+        font-size: $size-medium;
+      }    
+    }
+  }
+
+  // section 4
+  #consultas {
+    #sidebar-form {
+      @include span(7);
+      @include append(1);
+      float: left;
+    }
+    #content-map {
+      @include span(12);
+      p {
+        margin-bottom: $space;
+      }
+      float: left;
+      .home:before, 
+      .phone:before, 
+      .email:before {
+        @include sprite(17px, 17px, -57px, -30px);
+      }
+      .home:before {background-position: -67px -29px}
+      .phone:before {background-position: -88px -30px}
+      .email:before {background-position: -27px -26px}
+      .email:after {content:"@lapost-a.com"}
+    }
+  }
+} 
+
+
+
+article {
+  #posts & {
+    h3 {
+      display: inline; text-transform: uppercase;
+      @include paragraph;
+      &:before {
+        @include sprite(20px, 12px, -5px, -33px);
+      }
+    }
+    span {
+      @include paragraph;
+      margin-bottom: 0;
+      float: right;
+    }
+  }
+
+
+
+}

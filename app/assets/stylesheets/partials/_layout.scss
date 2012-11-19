@@ -1,0 +1,148 @@
+/*
+=============================================================
+MAIN STRUCTURE
+=============================================================
+*/
+
+/*
+body ul, body ol, body footer nav li,
+html body footer nav,
+html body footer .copyright,
+.navigation li, header nav li{padding:0; margin:0}
+.typography p, .content p, section[role="main"] > article p{margin-top:0} */
+
+body{
+  background: url(../images/backgrounds/bg-fuchsia.jpg) repeat;
+  @include blueprint-debug;
+  font-family:$font-primary;
+  .wrapper {
+    @include container;
+  /*  @include showgrid; */
+
+  }
+
+  header {
+    width: 100%;
+
+    height : $header-size;
+    background: $bg-header;
+    .wrapper {
+      @include container;
+      height : $header-size;
+      h1 {
+        @include tcenter;
+        margin-top: $space*5;
+        span {
+          display: none;
+        }
+        a {
+
+        }
+      }
+    }
+
+  }
+
+  .main-menu {
+    padding: $main-menu-height;
+  }
+  footer {
+    width: 100%;
+    margin-top: $space*10;
+    .inner {
+      @include container;
+      .social-links {
+        @include span(6);
+        @include fleft;
+      }
+      .copyright {
+        @include span(10);
+        @include fright;
+        font-size: $size-paragraph;
+        color: white;
+        padding-top: $space*3;
+        @include tright;
+      }
+    }
+  }
+}
+
+
+.region {
+  width: $main-width;
+  margin: 0 auto;
+}
+
+.region:after {
+  content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;
+}
+.region {
+  zoom:1
+}
+
+a {
+  color:$color;
+  text-decoration:none;
+}
+
+p, li {
+  @include paragraph;
+}
+
+
+
+
+
+
+
+
+#laposta-description {
+  @include tcenter;
+  margin:0 0 $laposta-description * 2;
+  border-top: 55px solid white;
+  .content {
+    display: inline;
+    p {
+      display: inline;
+    }
+  }
+}
+
+.crud {position: relative; z-index: 100}
+
+
+
+#home-top {display: none}
+#menu-dinamico {
+  position: fixed;
+  top:-200px;
+  width: 100%;
+  background: white;
+  padding: $space*3 0;
+  z-index: 200;
+  border-bottom: 3px solid $color-gray;
+  #home-top {
+    @include inline-block-(left);
+  }
+}
+
+#portafolio-botones a,
+.menu a{-moz-transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in;
+-o-transition: all 0.3s ease-in; transition: all 0.3s ease-in}
+
+#portafolio-botones a:hover,
+.menu a:hover,
+.active {color: $color-secondary;}
+
+
+#likes iframe{width: 100% !important}
+
+  .custom-bg .foobar-container {
+    background:#6C9E00 !important;
+  }
+
+  .foobar-message-wrapper {
+    font-family: $font-primary !important;
+    color: white !important;
+    font-weight: lighter !important;
+  }

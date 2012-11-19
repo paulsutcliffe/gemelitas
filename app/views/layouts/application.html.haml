@@ -25,26 +25,25 @@
     == <meta name="geo.region" content="PE-Lima" />
 
   %body
-    #page-wrapper
-      - if notice
-        %p.notice= notice
+    - if notice
+      %p.notice= notice
 
-      %header
-        .container
-          %h1#logo
-            = link_to image_tag('/images/logo.png'), root_path
-            %span Rails App Name
-
-        #page
-          .container
-            = yield
+    %header
+      .wrapper
+        %h1
+          = link_to 'Gemelitas Sutcliffe Pastor', root_path
+    %section#content{:role => 'main'}
+      = yield
 
     %footer#footer-bottom.sixteen.columns
       .container
         %p#info
-          123 4567
+          Anita Guevara | 1234566
           %br
-          info@domain.com
+          Andrea Pastor | 1234567
+          %br
+        %p#email
+          info@gemelitas-sp.org
       .container
         %p#copyright
           = t('layout.copyright')

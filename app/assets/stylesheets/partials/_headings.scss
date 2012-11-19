@@ -1,0 +1,56 @@
+
+
+
+@mixin page-title {
+  color: white;
+  font-size: $size-title;
+  background: $color-gray;
+  padding: $space * 5 0;
+  font-weight: lighter;
+  border-bottom: 3px solid $color-secondary;
+  margin: $space * 16 0 $space * 8;
+  @include tcenter;
+  border-top: 45px solid white;
+}
+
+@mixin heading {
+  position: relative;
+  font-family: $font-primary;
+  font-size: $size-heading;
+  padding: $space 0 $space*2;
+  margin-bottom: $space*4;
+  color: $color-secondary;
+}
+
+
+
+
+.page-title {
+  @include page-title;
+}
+
+h2.title {
+  @include heading; 
+  @include bg-border; 
+
+  &:after {
+    content: ""; display: block;
+    @include absolute(top, right, 0, 0);
+    @include sprite(30px, 30px, 0, 0);
+  }
+  #posts &:after {background-position: 0% 0}
+  #staff &:after {background-position: -35px 0}
+  #likes &:after {background-position: -70px 0}
+
+  #sidebar-form &:after {background-position: -110px 0}
+  #content-map &:after {background-position: -152px 0}
+
+
+  #laposta-description & {color: $color; font-size: $size-paragraph; background: none; display: inline}
+  #laposta-description &:after {background: none}
+
+
+
+  #servicios-listado & {color: $color-gray; font-size: $size-medium; padding: $space*4 0 $space*3; margin: 0 0 $space*3}
+  #servicios-listado &:after {background: none}
+}

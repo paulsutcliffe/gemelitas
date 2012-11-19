@@ -1,0 +1,76 @@
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 60px;            // each column is 4em wide
+$gutter-width   : 20px;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+/* GRID
+---------------------------------------------------- */
+$blueprint-grid-columns              : 24;
+$blueprint-grid-width                : 30px;
+$blueprint-grid-margin               : 10px;
+
+@import "blueprint";
+
+
+/* LAYOUT
+---------------------------------------------------- */
+$space                               : 5px;
+$space-top                           : $space;
+$space-bottom                        : $space * 3;
+$space-block                         : $space;
+$space-heading                       : $space;
+$space-paragraph                     : $space;
+
+
+/* Apariencia
+---------------------------------------------------- */
+$main-width                          : 800px;
+$header-size                         : 130px;
+$main-menu-height                    : 25px;
+$main-menu-li-padding                : $space * 4;
+$laposta-description                 : $space * 7;
+
+
+
+/* Gráfica
+---------------------------------------------------- */
+$bg-header                           : url(../images/backgrounds/bg-header.jpg) repeat-x;
+$bg-border                           : url(../images/backgrounds/border-style.jpg) repeat-x 0 100%;
+$bg-border-alt                       : url(../images/backgrounds/border-style-half.jpg) repeat-x 0 100%;
+$bg-arrow                            : url(../images/icons/icon-input-submit.png) no-repeat 100% 50%;
+$bg-input                            : url(../images/backgrounds/bg-input.jpg) repeat;
+$bg-external-link                    : url(../images/icons/external-link.png) no-repeat 100% 3px;
+
+/* COLORS
+---------------------------------------------------- */
+$color                               : #ffffff;
+$color-secondary                     : #F7DB15;
+$color-secondary-dark                : #8b0304;
+$color-gray                          : #b1b3b6;
+
+
+/* TIPOGRAPHY
+---------------------------------------------------- */
+$font-primary                        : 'Cherry Swash', cursive;
+$size-title                          : 24px;
+$size-heading                        : 20px;
+$size-menu                           : 18px;
+
+$size-medium                         : 14px;
+$size-paragraph                      : 12px;
+$font-size-small                     : 14px;
+$size-line                           : 115%;
+$size-line-default                   : 100%;
+
+
+/* OTHER
+---------------------------------------------------- */
+$tint                                : 50%;
+$tint-low                            : 70%;
+$border-menu-width                   : 5px;
+
+
+/* SPRITES
+---------------------------------------------------- */
+$sprite              : url(/images/icons/bg-icons.png) no-repeat 0 0;
+$color-shadow                        : tint($color, $tint-low);
