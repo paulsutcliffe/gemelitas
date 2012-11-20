@@ -232,7 +232,7 @@ DEPENDENCIES
   jquery-rails
   json
   metamagic
-  mysql2 (~> 0.2.7)
+  mysql2
   nifty-generators
   page_title_helper
   paper_trail
