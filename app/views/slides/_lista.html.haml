@@ -1,9 +1,8 @@
 #preface-top
   .royalSlider.rsDefault
     - @slides.each do |slide|
-      .rsContent
+      %div
         = image_tag slide.slide(:slide), :class => 'rsImg'
-        = #link_to 'Ver más', slide, :class => 'button rsABlock'
         -if current_admin
           %td= link_to 'Ver', slide
           %td= link_to 'Editar', edit_slide_path(slide)

@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @invitado = Invitado.new
     @slides = Slide.all
     today = DateTime.now
     babyshower = Date.new(2012, 12, 01)
@@ -8,7 +9,7 @@ class HomeController < ApplicationController
       @dias_para_el_babyshower = "Hoy es"
     else
       days_to_go = time_until.to_i
-      @dias_para_el_babyshower = "Faltan solo " + days_to_go.to_s + " días para"
+      @dias_para_el_babyshower = "Faltan solo <b>" + days_to_go.to_s + "</b> días para"
     end
   end
 

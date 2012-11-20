@@ -3,12 +3,50 @@
 
 
 .wrapper
-  %h2= @dias_para_el_babyshower
-  %h2 el babyshower de las gemelitas.
-
+  %h2.main-title
+    = raw(@dias_para_el_babyshower)
+    %br
+    el babyshower de las gemelitas.
   = render 'scripts/royal_slider'
   = render 'scripts/royal_slider_init'
-
   = render 'slides/lista'
+
+  %section#confirmar-asistencia.region
+    .confirmar
+      %b
+        confirmar tu asitencia es fácil
+      %br
+      llena tu nombre y tu e-mail, presiona enviar
+      %br
+      = render 'invitados/form'
+
+
+
+    .fecha
+      sábado 01|12
+      %br
+      3:00 pm
+
+  %section#como-llegar.region
+    %h3.title ¿Cómo llegar?
+    .direccion
+      Av. Pardo 399, segundo piso, Miraflores / La Alameda y Hacienda club
+    .mapa
+      <iframe src="http://www.map-generator.org/65ba14de-0768-4aa1-9f6d-94520e6b5560/iframe-map.aspx" scrolling="no" height="352px" width="950px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+  %section#lista-del-bebe.region
+    %h3.title Lista del bebé Ripley
+    .codigo
+      codigo: <b>2764587-9</b>
+
+  %section#preguntas.region
+    %h3.title ¿Tienes alguna duda?
+    .telefonos
+      %ul
+        %li Anita Guevara | 994148878, 414*8878
+        %li Andrea Pastor | 987098744
+    .correo
+      hola@gemelitas-sp.org
+
 
 

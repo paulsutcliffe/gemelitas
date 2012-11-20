@@ -91,19 +91,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ---------------------------------------------------- */
 /* HEADINGS
 ---------------------------------------------------- */
-/* LAYOUT	
+/* LAYOUT
 ---------------------------------------------------- */
-/* Texts 
+/* Texts
 ======================================================= */
-/* Box model 
+/* Box model
 ======================================================= */
-/* Padding combinations 
+/* Padding combinations
 ======================================================= */
-/* Margin 
+/* Margin
 ======================================================= */
-/* Floats & Alignments 
+/* Floats & Alignments
 ======================================================= */
-/* css Triangles 
+/* css Triangles
 ======================================================= */
 /* Buttons
 ======================================================= */
@@ -111,43 +111,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ======================================================= */
 /* Sprites
 ======================================================= */
-/* line 14, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 13, ../../app/assets/stylesheets/partials/_forms.scss */
+form {
+  margin-top: 20px;
+}
+/* line 15, ../../app/assets/stylesheets/partials/_forms.scss */
 #sidebar-first form {
   width: 230px;
 }
 
-/* line 20, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 21, ../../app/assets/stylesheets/partials/_forms.scss */
 #sidebar-first select {
   width: 100%;
   margin-bottom: 5px;
 }
 
-/* line 26, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 27, ../../app/assets/stylesheets/partials/_forms.scss */
 .field {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
-/* line 28, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 29, ../../app/assets/stylesheets/partials/_forms.scss */
 .field .description {
   font-size: 14px;
   margin: 5px 0 0 150px;
 }
 
-/* line 34, ../../app/assets/stylesheets/partials/_forms.scss */
+/* line 35, ../../app/assets/stylesheets/partials/_forms.scss */
 label {
+  padding-right: 5px;
   width: 150px;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   float: left;
-  text-transform: uppercase;
-  margin-bottom: 5px;
 }
 
 /* line 43, ../../app/assets/stylesheets/partials/_forms.scss */
 .field input, .field textarea {
-  border: 1px solid #f7db15;
-  background: url(../images/backgrounds/bg-input.jpg) repeat;
+  border: 0px solid #f7db15;
+  background: url(../images/backgrounds/bg-input.png) no-repeat;
   font-family: "Cherry Swash", cursive;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* line 49, ../../app/assets/stylesheets/partials/_forms.scss */
@@ -157,8 +160,8 @@ label {
 
 /* line 53, ../../app/assets/stylesheets/partials/_forms.scss */
 .field input {
-  width: 220px;
-  padding: 10px 5px;
+  width: 255px;
+  padding: 10px;
 }
 
 /* line 58, ../../app/assets/stylesheets/partials/_forms.scss */
@@ -181,15 +184,14 @@ label {
 /* line 73, ../../app/assets/stylesheets/partials/_forms.scss */
 .actions input {
   float: right;
-  color: #f7db15;
+  color: #f71568;
   border: 0;
-  padding: 5px 10px 5px 10px;
-  padding-right: 20px;
-  width: auto;
+  padding: 13px 5px 13px 5px;
   cursor: pointer;
-  background: url(../images/icons/icon-input-submit.png) no-repeat 100% 50%;
-  text-transform: uppercase;
-  font-size: 12px;
+  background: url(../images/backgrounds/bg-button.png) no-repeat;
+  font-size: 36px;
+  width: 200px;
+  font-family: "Cherry Swash", cursive;
 }
 
 /* line 6, ../../app/assets/stylesheets/partials/_lists.scss */
@@ -574,7 +576,7 @@ footer .social-links ul li a.youtube {
 #posts article h3 {
   display: inline;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 115%;
   color: white;
   margin-bottom: 10px;
@@ -593,7 +595,7 @@ footer .social-links ul li a.youtube {
 }
 /* line 131, ../../app/assets/stylesheets/partials/_blocks.scss */
 #posts article span {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 115%;
   color: white;
   margin-bottom: 10px;
@@ -614,7 +616,20 @@ footer .social-links ul li a.youtube {
   border-top: 45px solid white;
 }
 
-/* line 32, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 36, ../../app/assets/stylesheets/partials/_headings.scss */
+h2.main-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  font-size: 36px;
+  color: #f7db15;
+}
+/* line 42, ../../app/assets/stylesheets/partials/_headings.scss */
+h2.main-title b {
+  font-size: 72px;
+}
+
+/* line 47, ../../app/assets/stylesheets/partials/_headings.scss */
 h2.title {
   position: relative;
   font-family: "Cherry Swash", cursive;
@@ -624,7 +639,7 @@ h2.title {
   color: #f7db15;
   background: url(../images/backgrounds/border-style.jpg) repeat-x 0 100%;
 }
-/* line 36, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 51, ../../app/assets/stylesheets/partials/_headings.scss */
 h2.title:after {
   content: "";
   display: block;
@@ -641,45 +656,45 @@ h2.title:after {
   *zoom: 1;
   text-align: left;
 }
-/* line 41, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 56, ../../app/assets/stylesheets/partials/_headings.scss */
 #posts h2.title:after {
   background-position: 0% 0;
 }
-/* line 42, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 57, ../../app/assets/stylesheets/partials/_headings.scss */
 #staff h2.title:after {
   background-position: -35px 0;
 }
-/* line 43, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 58, ../../app/assets/stylesheets/partials/_headings.scss */
 #likes h2.title:after {
   background-position: -70px 0;
 }
-/* line 45, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 60, ../../app/assets/stylesheets/partials/_headings.scss */
 #sidebar-form h2.title:after {
   background-position: -110px 0;
 }
-/* line 46, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 61, ../../app/assets/stylesheets/partials/_headings.scss */
 #content-map h2.title:after {
   background-position: -152px 0;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 64, ../../app/assets/stylesheets/partials/_headings.scss */
 #laposta-description h2.title {
   color: white;
-  font-size: 12px;
+  font-size: 16px;
   background: none;
   display: inline;
 }
-/* line 50, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 65, ../../app/assets/stylesheets/partials/_headings.scss */
 #laposta-description h2.title:after {
   background: none;
 }
-/* line 54, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 69, ../../app/assets/stylesheets/partials/_headings.scss */
 #servicios-listado h2.title {
   color: #b1b3b6;
   font-size: 14px;
   padding: 20px 0 15px;
   margin: 0 0 15px;
 }
-/* line 55, ../../app/assets/stylesheets/partials/_headings.scss */
+/* line 70, ../../app/assets/stylesheets/partials/_headings.scss */
 #servicios-listado h2.title:after {
   background: none;
 }
@@ -699,6 +714,7 @@ html body footer .copyright,
 body {
   background: url(../images/backgrounds/bg-fuchsia.jpg) repeat;
   font-family: "Cherry Swash", cursive;
+  color: white;
 }
 /* line 25, ../../../../../../Users/paulsutcliffe/.gems/gems/compass-0.13.alpha.0/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body .showgrid {
@@ -714,7 +730,15 @@ body .showgrid {
   background-size: 100% 18px, auto;
   background-position: left top;
 }
-/* line 18, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 19, ../../app/assets/stylesheets/partials/_layout.scss */
+body p.notice {
+  background: #f7db15;
+  text-align: center;
+  padding: 50px;
+  color: #f71568;
+  font-size: 36px;
+}
+/* line 26, ../../app/assets/stylesheets/partials/_layout.scss */
 body .wrapper {
   width: 950px;
   margin: 0 auto;
@@ -722,67 +746,147 @@ body .wrapper {
   *zoom: 1;
   /*  @include showgrid; */
 }
-/* line 24, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 31, ../../app/assets/stylesheets/partials/_layout.scss */
 body header {
   width: 100%;
-  height: 130px;
+  height: 60px;
   background: url(../images/backgrounds/bg-header.jpg) repeat-x;
 }
-/* line 29, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 36, ../../app/assets/stylesheets/partials/_layout.scss */
 body header .wrapper {
+  background: url(../images/backgrounds/bg-shadow-hr-bar.png) no-repeat 50% 100%;
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  height: 130px;
+  height: 60px;
 }
-/* line 32, ../../app/assets/stylesheets/partials/_layout.scss */
-body header .wrapper h1 {
-  text-align: center;
+/* line 40, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper h1.site-name {
+  float: left;
+}
+/* line 41, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper ul.menu {
+  text-align: right;
+  float: right;
   margin-top: 25px;
 }
-/* line 35, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 45, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper ul.menu li {
+  display: inline;
+  margin-left: 15px;
+}
+/* line 50, ../../app/assets/stylesheets/partials/_layout.scss */
+body header .wrapper h1 {
+  margin-top: 25px;
+}
+/* line 52, ../../app/assets/stylesheets/partials/_layout.scss */
 body header .wrapper h1 span {
   display: none;
 }
-/* line 46, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 63, ../../app/assets/stylesheets/partials/_layout.scss */
 body .main-menu {
   padding: 25px;
 }
-/* line 49, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 66, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
-/* line 52, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 70, ../../app/assets/stylesheets/partials/_layout.scss */
 body footer .inner {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 54, ../../app/assets/stylesheets/partials/_layout.scss */
-body footer .inner .social-links {
+/* line 72, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer .inner #social-links {
   width: 230px;
   float: left;
 }
-/* line 58, ../../app/assets/stylesheets/partials/_layout.scss */
-body footer .inner .copyright {
-  width: 390px;
+/* line 76, ../../app/assets/stylesheets/partials/_layout.scss */
+body footer .inner #author {
   float: right;
-  font-size: 12px;
+}
+
+/* line 83, ../../app/assets/stylesheets/partials/_layout.scss */
+.region {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+/* line 89, ../../app/assets/stylesheets/partials/_layout.scss */
+.region h3.title {
   color: white;
-  padding-top: 15px;
+  font-size: 36px;
+  padding: 20px;
+  background: url(../images/backgrounds/bg-shadow-hr-bar.png) no-repeat 50% 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 97, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .confirmar {
+  float: left;
+  width: 60%;
+  font-size: 16px;
+  line-height: 115%;
+  color: white;
+  margin-bottom: 10px;
+}
+/* line 101, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .confirmar b {
+  font-size: 36px;
+}
+/* line 105, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .fecha {
+  float: right;
+  width: 40%;
+  font-size: 60px;
+  color: white;
   text-align: right;
 }
-
-/* line 71, ../../app/assets/stylesheets/partials/_layout.scss */
-.region {
-  width: 800px;
-  margin: 0 auto;
+/* line 112, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .mapa {
+  margin-top: 20px;
+}
+/* line 115, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .direccion {
+  font-size: 16px;
+  line-height: 115%;
+  color: white;
+  margin-bottom: 10px;
+}
+/* line 118, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .codigo {
+  color: #f7db15;
+  font-size: 36px;
+  text-align: center;
+  padding: 60px;
+}
+/* line 121, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .codigo b {
+  font-size: 72px;
+}
+/* line 127, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .telefonos {
+  font-size: 16px;
+  line-height: 115%;
+  color: white;
+  margin-bottom: 10px;
+  float: left;
+}
+/* line 131, ../../app/assets/stylesheets/partials/_layout.scss */
+.region .correo {
+  font-size: 36px;
+  color: #f7db15;
+  float: right;
+  margin-top: 20px;
 }
 
-/* line 76, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 139, ../../app/assets/stylesheets/partials/_layout.scss */
 .region:after {
   content: ".";
   display: block;
@@ -792,52 +896,52 @@ body footer .inner .copyright {
   height: 0;
 }
 
-/* line 79, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 142, ../../app/assets/stylesheets/partials/_layout.scss */
 .region {
   zoom: 1;
 }
 
-/* line 83, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 146, ../../app/assets/stylesheets/partials/_layout.scss */
 a {
   color: white;
   text-decoration: none;
 }
 
-/* line 88, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 151, ../../app/assets/stylesheets/partials/_layout.scss */
 p, li {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 115%;
   color: white;
   margin-bottom: 10px;
 }
 
-/* line 99, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 162, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description {
   text-align: center;
   margin: 0 0 70px;
   border-top: 55px solid white;
 }
-/* line 103, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 166, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content {
   display: inline;
 }
-/* line 105, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 168, ../../app/assets/stylesheets/partials/_layout.scss */
 #laposta-description .content p {
   display: inline;
 }
 
-/* line 111, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 174, ../../app/assets/stylesheets/partials/_layout.scss */
 .crud {
   position: relative;
   z-index: 100;
 }
 
-/* line 115, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 178, ../../app/assets/stylesheets/partials/_layout.scss */
 #home-top {
   display: none;
 }
 
-/* line 116, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 179, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico {
   position: fixed;
   top: -200px;
@@ -847,7 +951,7 @@ p, li {
   z-index: 200;
   border-bottom: 3px solid #b1b3b6;
 }
-/* line 124, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 187, ../../app/assets/stylesheets/partials/_layout.scss */
 #menu-dinamico #home-top {
   display: inline-block;
   *display: inline;
@@ -855,7 +959,7 @@ p, li {
   text-align: left;
 }
 
-/* line 130, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 193, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a,
 .menu a {
   -moz-transition: all 0.3s ease-in;
@@ -864,24 +968,24 @@ p, li {
   transition: all 0.3s ease-in;
 }
 
-/* line 135, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 198, ../../app/assets/stylesheets/partials/_layout.scss */
 #portafolio-botones a:hover,
 .menu a:hover,
 .active {
   color: #f7db15;
 }
 
-/* line 138, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 201, ../../app/assets/stylesheets/partials/_layout.scss */
 #likes iframe {
   width: 100% !important;
 }
 
-/* line 140, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 203, ../../app/assets/stylesheets/partials/_layout.scss */
 .custom-bg .foobar-container {
   background: #6C9E00 !important;
 }
 
-/* line 144, ../../app/assets/stylesheets/partials/_layout.scss */
+/* line 207, ../../app/assets/stylesheets/partials/_layout.scss */
 .foobar-message-wrapper {
   font-family: "Cherry Swash", cursive !important;
   color: white !important;

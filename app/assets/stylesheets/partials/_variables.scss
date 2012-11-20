@@ -17,7 +17,7 @@ $blueprint-grid-margin               : 10px;
 $space                               : 5px;
 $space-top                           : $space;
 $space-bottom                        : $space * 3;
-$space-block                         : $space;
+$space-block                         : $space * 12;
 $space-heading                       : $space;
 $space-paragraph                     : $space;
 
@@ -25,7 +25,7 @@ $space-paragraph                     : $space;
 /* Apariencia
 ---------------------------------------------------- */
 $main-width                          : 800px;
-$header-size                         : 130px;
+$header-size                         : 60px;
 $main-menu-height                    : 25px;
 $main-menu-li-padding                : $space * 4;
 $laposta-description                 : $space * 7;
@@ -34,11 +34,13 @@ $laposta-description                 : $space * 7;
 
 /* Gráfica
 ---------------------------------------------------- */
+$bg-shadow                           : url(../images/backgrounds/bg-shadow-hr-bar.png) no-repeat 50% 100%;
 $bg-header                           : url(../images/backgrounds/bg-header.jpg) repeat-x;
 $bg-border                           : url(../images/backgrounds/border-style.jpg) repeat-x 0 100%;
 $bg-border-alt                       : url(../images/backgrounds/border-style-half.jpg) repeat-x 0 100%;
 $bg-arrow                            : url(../images/icons/icon-input-submit.png) no-repeat 100% 50%;
-$bg-input                            : url(../images/backgrounds/bg-input.jpg) repeat;
+$bg-input                            : url(../images/backgrounds/bg-input.png) no-repeat;
+$bg-button                           : url(../images/backgrounds/bg-button.png) no-repeat;
 $bg-external-link                    : url(../images/icons/external-link.png) no-repeat 100% 3px;
 
 /* COLORS
@@ -47,6 +49,7 @@ $color                               : #ffffff;
 $color-secondary                     : #F7DB15;
 $color-secondary-dark                : #8b0304;
 $color-gray                          : #b1b3b6;
+$color-fuchsia                       : #F71568;
 
 
 /* TIPOGRAPHY
@@ -57,10 +60,13 @@ $size-heading                        : 20px;
 $size-menu                           : 18px;
 
 $size-medium                         : 14px;
-$size-paragraph                      : 12px;
+$size-paragraph                      : 16px;
 $font-size-small                     : 14px;
 $size-line                           : 115%;
 $size-line-default                   : 100%;
+$size-big                            : 36px;
+$size-huge                           : 60px;
+$size-big-as-hell                    : 72px;
 
 
 /* OTHER

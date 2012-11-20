@@ -1,16 +1,17 @@
 $form-field              : 100%;
-$form-field-margin       : $space * 5;
+$form-field-margin       : $space;
 $label-width             : $space * 30;
 $label-font-size         : $size-paragraph;
-$input-width             : 220px;
+$input-width             : 255px;
 $textarea-width          : 260px;
-$input-border-width      : 1px;
+$input-border-width      : 0px;
 $input-border-color      : $color-secondary;
 $textarea-min-height     : 100px;
 $bg-form-elements        : $bg-input;
 
 
 form {
+  margin-top: $space *4;
   #sidebar-first & {
     @include span(6);
   }
@@ -32,12 +33,11 @@ select {
 }
 
 label {
+  padding-right: $space;
   width: $label-width;
   color: $color;
   font-size: $label-font-size;
   float: left;
-  text-transform: uppercase;
-  margin-bottom: $space * 1;
 }
 
 .field input, .field textarea{
@@ -52,7 +52,7 @@ label {
 
 .field input{
   width: $input-width;
-  padding: $space *2 $space;
+  padding: $space *2;
 }
 
 .field textarea {

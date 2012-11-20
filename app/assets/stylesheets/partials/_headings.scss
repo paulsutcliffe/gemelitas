@@ -29,9 +29,24 @@
   @include page-title;
 }
 
+
+@mixin main-title {
+  text-align: center;
+}
+h2.main-title {
+  @include main-title;
+  margin-top: $space*12;
+  margin-bottom: $space*20;
+  font-size: $size-big;
+  color: $color-secondary;
+  b {
+    font-size: $size-big-as-hell;
+  }
+}
+
 h2.title {
-  @include heading; 
-  @include bg-border; 
+  @include heading;
+  @include bg-border;
 
   &:after {
     content: ""; display: block;

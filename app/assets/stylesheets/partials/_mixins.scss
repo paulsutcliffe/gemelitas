@@ -11,7 +11,7 @@
 
 
 
-/* LAYOUT	
+/* LAYOUT
 ---------------------------------------------------- */
 @mixin box-sizing {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box;
@@ -54,7 +54,7 @@
 }
 
 
-/* Texts 
+/* Texts
 ======================================================= */
 @mixin paragraph {
   font-size: $size-paragraph;
@@ -65,7 +65,7 @@
 
 
 
-/* Box model 
+/* Box model
 ======================================================= */
 @mixin inline-block-parent($alignment) {
 }
@@ -78,7 +78,7 @@
 
 @mixin clearfix2 {
   div:after, section:after {
-    content: "."; display: block; line-height: 0; clear: both; visibility: hidden; height: 0; 
+    content: "."; display: block; line-height: 0; clear: both; visibility: hidden; height: 0;
   }
   div:after, section:after {
     *zoom: 1;
@@ -93,7 +93,7 @@
   box-sizing: border-box;
 }
 
-/* Padding combinations 
+/* Padding combinations
 ======================================================= */
 @mixin padding-x($multiply, $top, $right, $bottom, $left) {
   padding:5px * $multiply - $top 10px *$multiply -$right 5px * $multiply - $bottom 10px *$multiply -$left;
@@ -102,11 +102,11 @@
   padding:10px * $multiply - $top 5px *$multiply -$right 10px * $multiply - $bottom 5px *$multiply -$left;
 }
 
-/* Margin 
+/* Margin
 ======================================================= */
 
 
-/* Floats & Alignments 
+/* Floats & Alignments
 ======================================================= */
 
 @mixin fright {
@@ -138,7 +138,7 @@
 }
 
 
-/* css Triangles 
+/* css Triangles
 ======================================================= */
 @mixin triangle {
   border-color:transparent transparent $primary-color;
@@ -169,15 +169,14 @@
 }
 @mixin submit($float) {
   float: $float;
-  color: $color-secondary;
+  color: $color-fuchsia;
   border: 0;
-  @include padding-x(1, 0, 0, 0, 0);
-  padding-right: $space * 4;
-  width: auto;
+  padding: 13px 5px 13px 5px;
   cursor: pointer;
-  background: $bg-arrow;
-  text-transform: uppercase;
-  font-size: $size-paragraph;
+  background: $bg-button;
+  font-size: $size-big;
+  width: 200px;
+  font-family: $font-primary;
 }
 
 
@@ -193,7 +192,7 @@
 
 @mixin transition {
   transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
 }

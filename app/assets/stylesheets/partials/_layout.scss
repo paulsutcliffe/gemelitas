@@ -15,10 +15,17 @@ body{
   background: url(../images/backgrounds/bg-fuchsia.jpg) repeat;
   @include blueprint-debug;
   font-family:$font-primary;
+  color: white;
+  p.notice {
+    background: $color-secondary;
+    text-align: center;
+    padding: $space * 10;
+    color: $color-fuchsia;
+    font-size: $size-big;
+  }
   .wrapper {
     @include container;
-  /*  @include showgrid; */
-
+    /*  @include showgrid; */
   }
 
   header {
@@ -27,10 +34,20 @@ body{
     height : $header-size;
     background: $bg-header;
     .wrapper {
+      background: $bg-shadow;
       @include container;
       height : $header-size;
+      h1.site-name { float: left; }
+      ul.menu {
+        text-align: right;
+        float: right;
+        margin-top: $space*5;
+        li {
+          display: inline;
+          margin-left: $space * 3;
+        }
+      }
       h1 {
-        @include tcenter;
         margin-top: $space*5;
         span {
           display: none;
@@ -48,29 +65,75 @@ body{
   }
   footer {
     width: 100%;
-    margin-top: $space*10;
+    margin-top: $space*20;
+    padding-bottom: $space*20;
     .inner {
       @include container;
-      .social-links {
+      #social-links {
         @include span(6);
-        @include fleft;
+        float: left;
       }
-      .copyright {
-        @include span(10);
-        @include fright;
-        font-size: $size-paragraph;
-        color: white;
-        padding-top: $space*3;
-        @include tright;
+      #author {
+      float: right;
       }
     }
   }
 }
 
-
 .region {
-  width: $main-width;
+  width: 100%;
   margin: 0 auto;
+  padding-bottom: $space * 4;
+  margin-top: $space * 4;
+
+  h3.title {
+    color: white;
+    font-size: $size-big;
+    padding: $space * 4;
+    background: $bg-shadow;
+    text-align: center;
+    margin-bottom: $space * 4;
+  }
+  .confirmar {
+    float: left;
+    width: 60%;
+    @include paragraph;
+    b {
+      font-size: $size-big;
+    }
+  }
+  .fecha {
+    float: right;
+    width: 40%;
+    font-size: $size-huge;
+    color: white;
+    text-align: right;
+  }
+  .mapa {
+    margin-top: $space *4;
+  }
+  .direccion {
+    @include paragraph;
+  }
+  .codigo {
+    color: $color-secondary;
+    font-size: $size-big;
+    b {
+      font-size: $size-big-as-hell;
+    }
+    text-align: center;
+    padding: $space * 12;
+   }
+   .telefonos {
+     @include paragraph;
+     float: left;
+   }
+   .correo {
+     font-size: $size-big;
+     color: $color-secondary;
+     float: right;
+     margin-top: $space *4;
+   }
 }
 
 .region:after {

@@ -1,0 +1,21 @@
+%h1 Listing invitados
+
+%table
+  %tr
+    %th Nombre
+    %th Email
+    %th
+    %th
+    %th
+
+  - @invitados.each do |invitado|
+    %tr
+      %td= invitado.nombre
+      %td= invitado.email
+      %td= link_to 'Show', invitado
+      %td= link_to 'Edit', edit_invitado_path(invitado)
+      %td= link_to 'Destroy', invitado, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Invitado', new_invitado_path

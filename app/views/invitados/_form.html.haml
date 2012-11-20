@@ -1,0 +1,16 @@
+= form_for (@invitado, :url => { :controller => 'invitados', :action => 'create' }) do |f|
+  -if @invitado.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@invitado.errors.count, "error")} prohibited this invitado from being saved:"
+      %ul
+        - @invitado.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :nombre, "nombre"
+    = f.text_field :nombre
+  .field
+    = f.label :email, "e-mail"
+    = f.text_field :email
+  .actions
+    = f.submit 'Enviar'
