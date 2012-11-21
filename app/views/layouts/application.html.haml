@@ -34,6 +34,8 @@
       .wrapper
         %h1.site-name
           = link_to 'Gemelitas Sutcliffe Pastor', 'javascript:$.scrollTo("body",800);'
+          .like-button
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgemelitas-sp.org%2F&amp;send=false&amp;layout=button_count&amp;width=40&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=236994876375045" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
         = render 'layouts/menu'
     %section#content{:role => 'main'}
       = yield
@@ -41,7 +43,7 @@
     %footer#footer-bottom.sixteen.columns
       .inner
         %p#social-links
-          = link_to 'evento en el facebook', 'http://www.facebook.com/events/330718627035172'
+          = link_to 'Link al evento en el facebook', 'http://www.facebook.com/events/330718627035172'
         %p#author
           = link_to image_tag('/images/kosmyka.png'), 'http://www.kosmyka.com', :target => '_blank'
     = render 'shared/google_analytics'
