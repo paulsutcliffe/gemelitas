@@ -38,7 +38,6 @@ body{
       @include container;
       height : $header-size;
       h1.site-name { float: left; }
-      .like-button { float: left; }
       ul.menu {
         text-align: right;
         float: right;
