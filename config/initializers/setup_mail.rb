@@ -3,7 +3,7 @@ ActionMailer::Base.smtp_settings = {
   :port                 => 587,
   :domain               => "gemelitas-sp.org",
   :user_name            => "hola@gemelitas-sp.org",
-  :password             => "chimpance99",
+  :password             => "minimotrixx95",
   :authentication       => "plain",
   :enable_starttls_auto => true
 }
