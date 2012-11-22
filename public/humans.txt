@@ -1,0 +1,19 @@
+/* TEAM */
+
+       Development: Paul Sutcliffe
+       Twitter: @paulyoyo
+
+       Frontend developer: Paul Sutcliffe
+       Twitter: @paulyoyo
+
+       Web design: Paul Sutcliffe
+       Twitter: @paulyoyo
+
+/* SITE */
+       Site launch: 2012/09/17
+       Last update:2012/11/21
+       Framework: Ruby on Rails 3.0.3
+       Language: Spanish
+       Standards : HTML5, CSS3
+       Components: jQuery, googlefonts, facebook developers, haml, sass, compass, blueprint, html5shim
+       Software: Photoshop, VIM
