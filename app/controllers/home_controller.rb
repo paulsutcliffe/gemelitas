@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @invitado = Invitado.new
-    @slides = Slide.all
+    @slides = Slide.order("created_at DESC")
     today = DateTime.now
     babyshower = Date.new(2012, 12, 01)
     time_until =  babyshower - today
