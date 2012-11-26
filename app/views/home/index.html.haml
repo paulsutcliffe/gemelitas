@@ -1,12 +1,15 @@
 - page_title! 'Babyshower'
 
+= render 'countdown'
 = render 'facebook'
 
 .wrapper
   %h2.main-title
-    = raw(@dias_para_el_babyshower)
+    Faltan:
     %br
-    el babyshower de las gemelitas.
+    #defaultCountdown
+    %br
+    para el babyshower de las gemelitas.
   = render 'scripts/royal_slider'
   = render 'scripts/royal_slider_init'
   = render 'slides/lista'

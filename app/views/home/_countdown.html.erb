@@ -1,0 +1,8 @@
+<script type="text/javascript">
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear(), 12 - 1, 01, 15);
+	$('#defaultCountdown').countdown({until: austDay, timezone: -5});
+  $('#defaultCountdown').countdown($.countdown.regional['es']);
+});
+</script>
